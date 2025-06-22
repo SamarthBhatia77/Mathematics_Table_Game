@@ -4,22 +4,27 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Table Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div id="difficultySection">
-		<p>Please pick your difficulty level-</p>
-		<p>Easy- 1 to 10 tables</p>
-		<p>Medium- 10 to 20 tables</p>
-		<p>Difficult- 20 to 30 tables</p>
-		<button onclick="startGameEasy();">Easy</button>
-		<button onclick="startGameMedium();">Medium</button>
-		<button onclick="startGameTough();">Difficult</button>
+	<div id="wrapper">
+		<div id="container">
+			<div id="difficultySection">
+				<p class="textOne">Please pick your difficulty level</p>
+				<p><div id="easytext">Easy</div> 1 to 10 tables</p>
+				<p><div id="mediumtext">Medium</div> 10 to 20 tables</p>
+				<p><div id="difficulttext">Difficult</div> 20 to 30 tables</p>
+				<button onclick="startGameEasy();" id="buttonEasy">Easy</button>
+				<button onclick="startGameMedium();" id="buttonMedium">Medium</button>
+				<button onclick="startGameTough();" id="buttonDifficult">Difficult</button>
+			</div>
+		<p class="displayQuestion"></p>
+		<p class="answerBox"></p>
+		<p class="answerStatus"></p>
+		<p class="displayHighScore"></p>
+		<p class="displayAfterLoss"></p>
+		</div>
 	</div>
-	<p class="displayQuestion"></p>
-	<p class="answerBox"></p>
-	<p class="answerStatus"></p>
-	<p class="displayHighScore"></p>
-	<p class="displayAfterLoss"></p>
 	<script src="script.js"></script>
 </body>
 </html>
