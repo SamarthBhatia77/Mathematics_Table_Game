@@ -1,0 +1,125 @@
+html, body {
+  	height: 100%;
+  	margin: 0;
+  	padding: 0;
+}
+body {
+	background-image: url("background.jpg");
+	background-repeat: no-repeat;            /* Prevent repetition */
+	background-size: cover;                  /* Make it fill the screen */
+    background-position: center;             /* Center the image */
+    background-attachment: fixed;            /* Optional: keeps it fixed on scroll */	 
+    margin: 0;
+    padding: 0;
+	}
+#wrapper {
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	height: 100vh; /* full height of the viewport */
+}
+#container {
+	text-align: center;
+	align-content: center;
+	font-family: helvetica;
+	font-size: 1.6em;
+	border: solid lightgray 4px;
+	border-radius: 25px;
+	display: inline-block;
+	padding: 35px;
+	margin: 150px;
+	margin-left: 130px;
+	background-color: white;
+}
+#buttonEasy {
+	font-family: helvetica;
+	background-color: lightgreen;
+	font-size: 0.6em;
+	border-color: transparent;
+	border-radius: 15px;
+	padding: 10px;
+	padding-left:15px;
+	padding-right: 15px;
+	cursor: pointer;
+}
+#buttonMedium {
+	font-family: helvetica;
+	background-color: yellow;
+	font-size: 0.6em;
+	border-color: transparent;
+	border-radius: 15px;
+	padding: 10px;
+	padding-left:15px;
+	padding-right: 15px;
+	cursor: pointer;
+
+}
+#buttonDifficult {
+	font-family: helvetica;
+	background-color: coral;
+	font-size: 0.6em;
+	border-color: transparent;
+	border-radius: 15px;
+	padding: 10px;
+	padding-left:15px;
+	padding-right: 15px;
+	cursor: pointer;
+
+}
+.textOne {
+	text-decoration: underline;
+}
+
+#easytext {
+	color: #22d611;
+}
+#mediumtext {
+	color: #edd70e;
+}
+#difficulttext {
+	color: red;
+}
+input[type="number"] {
+	font-size: 0.8em;
+	border-color: blueviolet;
+	color: darkblue;
+	padding: 5px;
+	border-radius: 15px;
+	border-color: lightgray;
+}
+/* To remove the up and down buttons */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#submitButton {
+	font-size: 0.8em;
+	border:solid #3acf78;
+	border-radius: 0px;
+	color: #3acf78;
+	background-color: white;
+	padding: 4px;
+	cursor: pointer;
+	margin: 10px;
+	margin-top: 30px;
+}
+#restartButton {
+	font-size: 1em;
+	border:solid darkblue;
+	border-radius: 0px;
+	color: darkblue;
+	background-color: white;
+	padding: 5px;
+	cursor: pointer;
+	margin: 5px;
+}
+#selectDifficultyButton {
+	font-size: 1em;
+	border:solid darkblue;
+	border-radius: 0px;
+	color: darkblue;
+	background-color: white;
+	padding: 5px;
+	cursor: pointer;
+}
