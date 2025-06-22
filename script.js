@@ -18,7 +18,7 @@
 		questionBox.innerHTML = `What is ${num1} × ${num2}?`;
 		answerBox.innerHTML = `
 		<input type="number" id="userAnswer" placeholder="Enter your answer" onkeydown="if(event.key === 'Enter') checkAnswer(${ans}, ${num1}, ${num2})"> 
-		<button onclick="checkAnswer(${ans}, ${num1},${num2})">Submit</button>`;
+		<button id="submitButton" onclick="checkAnswer(${ans}, ${num1},${num2})">Submit</button>`;
 
 		//so that user does not have to press the input box again and again
 		setTimeout(() => {
@@ -41,7 +41,7 @@
 		questionBox.innerHTML = `What is ${num1} × ${num2}?`;
 		answerBox.innerHTML = `
 		<input type="number" id="userAnswer" placeholder="Enter your answer" onkeydown="if(event.key === 'Enter') checkAnswer(${ans}, ${num1}, ${num2})">
-		<button onclick="checkAnswer(${ans}, ${num1},${num2})">Submit</button>`;
+		<button id="submitButton" onclick="checkAnswer(${ans}, ${num1},${num2})">Submit</button>`;
 
 		//so that user does not have to press the input box again and again
 		setTimeout(() => {
@@ -63,7 +63,7 @@
 		questionBox.innerHTML = `What is ${num1} × ${num2}?`;
 		answerBox.innerHTML = `
 		<input type="number" id="userAnswer" placeholder="Enter your answer" onkeydown="if(event.key === 'Enter') checkAnswer(${ans}, ${num1}, ${num2})">
-		<button onclick="checkAnswer(${ans}, ${num1},${num2})">Submit</button>`;
+		<button id="submitButton" onclick="checkAnswer(${ans}, ${num1},${num2})">Submit</button>`;
 
 		//so that user does not have to press the input box again and again
 		setTimeout(() => {
@@ -113,7 +113,7 @@
 		element2=document.querySelector(".displayAfterLoss");
 		element2.innerHTML=`
 			<div class="afterLossButtons">
-				<button onclick="restartGame();">Retry</button> <button onclick="location.reload();"> Select Difficulty</button>
+				<button id="restartButton" onclick="restartGame();">Retry</button> <button id="selectDifficultyButton" onclick="location.reload();"> Select Difficulty</button>
 			</div> `
 	}
 
