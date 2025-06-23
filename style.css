@@ -42,6 +42,9 @@ body {
 	padding-right: 15px;
 	cursor: pointer;
 }
+#buttonEasy:hover{
+	transform: scale(1.1);
+}
 #buttonMedium {
 	font-family: helvetica;
 	background-color: yellow;
@@ -52,6 +55,10 @@ body {
 	padding-left:15px;
 	padding-right: 15px;
 	cursor: pointer;
+
+}
+#buttonMedium:hover {
+	transform: scale(1.1);
 
 }
 #buttonDifficult {
@@ -66,18 +73,25 @@ body {
 	cursor: pointer;
 
 }
+#buttonDifficult:hover{
+	transform: scale(1.1);
+
+}
 .textOne {
 	text-decoration: underline;
 }
 
 #easytext {
 	color: #22d611;
+	font-weight: bold;
 }
 #mediumtext {
 	color: #edd70e;
+	font-weight: bold;
 }
 #difficulttext {
 	color: red;
+	font-weight: bold;
 }
 input[type="number"] {
 	font-size: 0.8em;
@@ -114,6 +128,10 @@ input[type="number"]::-webkit-outer-spin-button {
 	cursor: pointer;
 	margin: 5px;
 }
+#restartButton:hover {
+	background-color: lightblue;
+	transition: 0.4s ease;
+}
 #selectDifficultyButton {
 	font-size: 1em;
 	border:solid darkblue;
@@ -122,4 +140,21 @@ input[type="number"]::-webkit-outer-spin-button {
 	background-color: white;
 	padding: 5px;
 	cursor: pointer;
+}
+#selectDifficultyButton:hover {
+	background-color: lightblue;
+	transition: 0.4s ease;
+}
+.answerStatusWrong {
+	color: red !important;
+	font-family: helvetica;
+	font-weight: bold;
+}
+.answerStatus {
+	color: green;
+	font-family: helvetica;
+	font-weight: bold;
+}
+.displayQuestion {
+	font-weight: bold;
 }

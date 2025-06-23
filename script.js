@@ -124,6 +124,7 @@
 		const answerStatus=document.querySelector(".answerStatus");
 		if (Number(userAnswer) === ans) {
 			document.querySelector(".answerStatus").style.display="";
+			document.querySelector(".answerStatus").classList.remove("answerStatusWrong");
 			answerStatus.innerHTML="Correct!"
 			if(i==1) {
 				score++;
@@ -145,6 +146,7 @@
 			}
 			document.querySelector(".answerStatus").style.display="";
 			document.querySelector(".displayHighScore").style.display="";
+			document.querySelector(".answerStatus").classList.add("answerStatusWrong");
 			answerStatus.innerHTML=`Wrong! ${num1} x ${num2} = ${ans}`
 			highScoreBox.innerHTML = `Your Score: ${score} , All-time High Score: ${highScore}`;
 			score=0; // reseting the score after user gives a wrong answer!
